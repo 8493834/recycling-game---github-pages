@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recycling Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>♻️ Recycling Game</h1>
+  <p>Drag the items to the correct bin! Score points for correct sorting.</p>
+
+  <div id="game-container">
+    <!-- Bins -->
+    <div id="bins">
+      <div class="bin" data-type="plastic">Plastic</div>
+      <div class="bin" data-type="paper">Paper</div>
+      <div class="bin" data-type="glass">Glass</div>
+    </div>
+
+    <!-- Items -->
+    <div id="items"></div>
+  </div>
+
+  <!-- Scoreboard -->
+  <div id="scoreboard">
+    <span>Score: <span id="score">0</span></span>
+    <span>Time: <span id="timer">60</span>s</span>
+  </div>
+
+  <!-- Share Button -->
+  <div id="share-container" style="display: none;">
+    <button id="share-button">Share Your Score!</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
